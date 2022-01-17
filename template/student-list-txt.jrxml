@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" isIgnorePagination="true" uuid="7d764c3e-e39b-4a95-bbb1-fe19272babbd">
+    <property name="com.jaspersoft.studio.data.sql.tables">
+        <![CDATA[c3R1ZGVudCAsMTUsMTUsNmQ1ZWY5NGUtYTI1OC00ODFmLTg2ZTgtNjc1MzExMTQ0MzY2O3RlYWNo
+ZXIgLDE5MCwyOSw2NzRlMjU0ZC0yMTIwLTQyMjAtYTlmOS0wYWEwODkxYWJkNmM7]]>
+    </property>
+    <property name="net.sf.jasperreports.export.text.page.width" value="200"/>
+    <property name="net.sf.jasperreports.export.text.page.height" value="10"/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+    <queryString language="SQL">
+        <![CDATA[]]>
+    </queryString>
+    <field name="studentId" class="java.lang.Integer"></field>
+    <field name="teacher_id" class="java.lang.Integer"></field>
+    <field name="studentName" class="java.lang.String"></field>
+    <field name="studentLastname" class="java.lang.String"></field>
+    <field name="studentPhone" class="java.lang.String"></field>
+    <field name="studentProgram" class="java.lang.String"></field>
+    <field name="teacherName" class="java.lang.String"></field>
+    <field name="teacherLastname" class="java.lang.String"></field>
+<!--    <group name="studentId">-->
+<!--        <groupExpression><![CDATA[$F{studentId}]]></groupExpression>-->
+<!--    </group>-->
+    <group name="studentId">
+        <groupExpression><![CDATA[$F{studentId}]]></groupExpression>
+    </group>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <columnHeader>
+        <band height="38" splitType="Stretch">
+            <staticText>
+                <reportElement x="0" y="20" width="400" height="18" uuid="2eb324ff-e8d6-45b5-b941-21ced83c8493"/>
+                <text><![CDATA[----------------------------------------------------------------------------------------------------------------------------]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="0" y="0" width="90" height="20" uuid="7bdf24c5-827b-4ef6-9619-05af17844424">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf637a10-8e49-45cd-9308-57bf303d7a6e"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <text><![CDATA[STUDENT ID]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="90" y="0" width="70" height="20" uuid="983ef9ca-ad6e-4871-8ff9-4aeaaff84af5">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5f7412b-9eca-4d3a-bdc2-f9dc51d8a0b9"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <text><![CDATA[FIRSTNAME]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="160" y="0" width="70" height="20" uuid="2cc11be0-6c35-4c66-9ea1-ec3e46e51a48">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="76b42006-5854-4906-b6d6-d33530e02ae0"/>
+                    <property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <text><![CDATA[LASTNAME]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="230" y="0" width="90" height="20" uuid="93f9e260-d354-490e-a2d2-cb23d08b3138">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f4c8e3da-1ec6-4cb0-83b3-73bd22c36868"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <text><![CDATA[TEACHER NAME]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="21" splitType="Stretch">
+            <textField isBlankWhenNull="false">
+                <reportElement mode="Opaque" x="0" y="0" width="90" height="21" uuid="ce14aaa3-eb6f-4008-ab92-b5197a4e2db5">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf637a10-8e49-45cd-9308-57bf303d7a6e"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{studentId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement mode="Opaque" x="90" y="0" width="70" height="21" uuid="69f85c58-c890-46ad-9007-0755fb96e835">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f5f7412b-9eca-4d3a-bdc2-f9dc51d8a0b9"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{studentName}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement mode="Opaque" x="160" y="0" width="70" height="21" uuid="5c5b52a8-079f-4e12-9182-0f53a355f7b2">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="76b42006-5854-4906-b6d6-d33530e02ae0"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{studentLastname}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement mode="Opaque" x="230" y="0" width="90" height="21" uuid="52ddaff0-4fb8-410e-acf5-19db2365976b">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f4c8e3da-1ec6-4cb0-83b3-73bd22c36868"/>
+                </reportElement>
+                <textElement textAlignment="Left" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{teacherName}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>
